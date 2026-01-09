@@ -3,10 +3,13 @@ import './App.css'
 
 function App() {
 
-  let [Counter, setCounter] = useState(5)
+  const [Counter, setCounter] = useState(5)
 
   function addValue(){
     if(Counter == 10) return
+    setCounter((prevCounter) => prevCounter+1)
+    setCounter(Counter+1)
+    setCounter(Counter+1)
     setCounter(Counter+1)
     console.log("Clicked",Counter);
     
